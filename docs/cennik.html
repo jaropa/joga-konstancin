@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cennik zajęć jogi w Joga Konstancin. Pakiety karnetów i zniżki dla studentów i seniorów.">
+  <title>Cennik - Joga Konstancin</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-gradient-primary sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-white">Joga Konstancin</span>
+        </a>
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" class="nav-link px-3 py-2">Strona główna</a>
+          <a href="o-nas.html" class="nav-link px-3 py-2">O nas</a>
+          <a href="zajecia.html" class="nav-link px-3 py-2">Zajęcia</a>
+          <a href="cennik.html" class="nav-link nav-link-active px-3 py-2">Cennik</a>
+          <a href="czytelnia.html" class="nav-link px-3 py-2">Czytelnia</a>
+          <a href="gabinet.html" class="nav-link px-3 py-2">Gabinet</a>
+          <a href="kontakt.html" class="nav-link px-3 py-2">Kontakt</a>
+          <a href="aktualnosci.html" class="nav-link px-3 py-2">Aktualności</a>
+          <a href="sklepik.html" class="nav-link px-3 py-2">Sklepik</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary-dark">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block nav-link py-2">Strona główna</a>
+        <a href="o-nas.html" class="block nav-link py-2">O nas</a>
+        <a href="zajecia.html" class="block nav-link py-2">Zajęcia</a>
+        <a href="cennik.html" class="block nav-link nav-link-active py-2">Cennik</a>
+        <a href="czytelnia.html" class="block nav-link py-2">Czytelnia</a>
+        <a href="gabinet.html" class="block nav-link py-2">Gabinet</a>
+        <a href="kontakt.html" class="block nav-link py-2">Kontakt</a>
+        <a href="aktualnosci.html" class="block nav-link py-2">Aktualności</a>
+        <a href="sklepik.html" class="block nav-link py-2">Sklepik</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-gradient-primary py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Cennik</h1>
+      <p class="text-xl text-accent-cream max-w-2xl mx-auto">
+        Wybierz karnet dopasowany do Twoich potrzeb
+      </p>
+    </div>
+  </header>
+
+  <!-- Pricing Tables -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Regular Pricing -->
+      <div class="mb-16">
+        <h2 class="section-title text-center mb-8">Cennik ogólny</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Single Entry -->
+          <div class="price-card">
+            <h3 class="text-lg font-bold text-primary mb-2">Pojedyncze wejście</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">60</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>50 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Jednorazowe wejście</li>
+              <li>Dowolne zajęcia</li>
+            </ul>
+          </div>
+
+          <!-- 4 Sessions -->
+          <div class="price-card">
+            <h3 class="text-lg font-bold text-primary mb-2">Karnet 4 wejścia</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">220</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>200 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Ważność: 35 dni</li>
+              <li>55 zł / wejście</li>
+            </ul>
+          </div>
+
+          <!-- 6 Sessions -->
+          <div class="price-card">
+            <h3 class="text-lg font-bold text-primary mb-2">Karnet 6 wejść</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">270</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>240 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Ważność: 35 dni</li>
+              <li>45 zł / wejście</li>
+            </ul>
+          </div>
+
+          <!-- 8 Sessions -->
+          <div class="price-card border-2 border-accent relative">
+            <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-accent text-white text-xs px-3 py-1 rounded-full">
+              Popularny
+            </div>
+            <h3 class="text-lg font-bold text-primary mb-2">Karnet 8 wejść</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">320</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>290 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Ważność: 35 dni</li>
+              <li>40 zł / wejście</li>
+            </ul>
+          </div>
+
+          <!-- 12 Sessions -->
+          <div class="price-card">
+            <h3 class="text-lg font-bold text-primary mb-2">Karnet 12 wejść</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">420</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>380 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Ważność: 35 dni</li>
+              <li>35 zł / wejście</li>
+            </ul>
+          </div>
+
+          <!-- 12+ Sessions -->
+          <div class="price-card">
+            <h3 class="text-lg font-bold text-primary mb-2">Karnet 12+ wejść</h3>
+            <div class="mb-4">
+              <span class="text-4xl font-bold text-primary">440</span>
+              <span class="text-lg text-body/70">zł</span>
+            </div>
+            <p class="text-sm text-body/70 mb-4">Studenci/Uczniowie: <strong>400 zł</strong></p>
+            <ul class="text-sm text-body/70 space-y-1">
+              <li>Ważność: 28 dni</li>
+              <li>Nielimitowane wejścia</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra Entry -->
+      <div class="mb-16">
+        <div class="max-w-xl mx-auto">
+          <div class="card p-6 bg-accent-cream">
+            <h3 class="text-xl font-bold text-primary mb-4 text-center">Dodatkowe wejście z karnetem</h3>
+            <div class="flex justify-center items-center gap-8">
+              <div class="text-center">
+                <p class="text-sm text-body/70 mb-1">Cena ogólna</p>
+                <p class="text-2xl font-bold text-primary">40 zł</p>
+              </div>
+              <div class="text-center">
+                <p class="text-sm text-body/70 mb-1">Studenci/Uczniowie</p>
+                <p class="text-2xl font-bold text-primary">35 zł</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rules -->
+      <div class="max-w-3xl mx-auto">
+        <h2 class="section-title text-center mb-8">Zasady korzystania z karnetów</h2>
+        <div class="card p-8">
+          <ul class="space-y-4">
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <div>
+                <strong class="text-primary">Ważność karnetów:</strong>
+                <p class="text-body/70">Karnety standardowe ważne są 35 dni (4 tygodnie + 1 tydzień). Karnet 12+ ważny jest 28 dni.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+              </svg>
+              <div>
+                <strong class="text-primary">Jeden instruktor:</strong>
+                <p class="text-body/70">Karnet uprawnia do udziału w zajęciach tylko u JEDNEGO wybranego instruktora.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <div>
+                <strong class="text-primary">Maksymalnie 1 zajęcia dziennie:</strong>
+                <p class="text-body/70">W ramach karnetu można uczestniczyć w maksymalnie jednych zajęciach dziennie.</p>
+              </div>
+            </li>
+            <li class="flex gap-3">
+              <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              <div>
+                <strong class="text-primary">Niewykorzystane zajęcia:</strong>
+                <p class="text-body/70">Niewykorzystane wejścia NIE przechodzą na kolejny miesiąc.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Individual Lessons -->
+      <div class="mt-16 text-center">
+        <h2 class="section-title mb-4">Zajęcia indywidualne</h2>
+        <p class="text-body/70 mb-6">
+          Cena zajęć indywidualnych ustalana jest bezpośrednio z instruktorem.
+        </p>
+        <a href="kontakt.html" class="btn btn-primary">Skontaktuj się z instruktorem</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">Joga Konstancin</h3>
+          <p class="text-accent-cream text-sm">
+            Studio jogi Iyengara w Konstancinie-Jeziornie. Profesjonalne zajęcia dla wszystkich poziomów zaawansowania.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Szybkie linki</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="zajecia.html" class="text-accent-cream hover:text-white">Harmonogram zajęć</a></li>
+            <li><a href="cennik.html" class="text-accent-cream hover:text-white">Cennik</a></li>
+            <li><a href="o-nas.html" class="text-accent-cream hover:text-white">Nasi instruktorzy</a></li>
+            <li><a href="sklepik.html" class="text-accent-cream hover:text-white">Sklepik</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+          <ul class="space-y-2 text-sm text-accent-cream">
+            <li>ul. Warszawska 27</li>
+            <li>05-520 Konstancin-Jeziorna</li>
+            <li class="pt-2">
+              <a href="mailto:info.jogakonstancin@gmail.com" class="hover:text-white">
+                info.jogakonstancin@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Godziny zajęć</h3>
+          <ul class="space-y-1 text-sm text-accent-cream">
+            <li>Poniedziałek - Piątek</li>
+            <li>08:30 - 20:30</li>
+            <li class="pt-2">
+              <a href="zajecia.html" class="text-accent hover:text-white">
+                Zobacz pełny harmonogram →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-8 text-center text-sm text-accent-cream">
+        <p>&copy; 2024 Joga Konstancin. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

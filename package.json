@@ -1,0 +1,16 @@
+{
+  "name": "joga-konstancin",
+  "version": "1.0.0",
+  "description": "Modern yoga studio website for Joga Konstancin",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./docs/css/style.css --minify",
+    "serve": "npx serve docs"
+  },
+  "private": true,
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "serve": "^14.2.0"
+  }
+}

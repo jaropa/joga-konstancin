@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Joga Konstancin - Studio jogi Iyengara w Konstancinie-Jeziornie. Zajęcia dla początkujących i zaawansowanych.">
+  <title>Joga Konstancin - Studio Jogi Iyengara</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-gradient-primary sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-white">Joga Konstancin</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" class="nav-link nav-link-active px-3 py-2">Strona główna</a>
+          <a href="o-nas.html" class="nav-link px-3 py-2">O nas</a>
+          <a href="zajecia.html" class="nav-link px-3 py-2">Zajęcia</a>
+          <a href="cennik.html" class="nav-link px-3 py-2">Cennik</a>
+          <a href="czytelnia.html" class="nav-link px-3 py-2">Czytelnia</a>
+          <a href="gabinet.html" class="nav-link px-3 py-2">Gabinet</a>
+          <a href="kontakt.html" class="nav-link px-3 py-2">Kontakt</a>
+          <a href="aktualnosci.html" class="nav-link px-3 py-2">Aktualności</a>
+          <a href="sklepik.html" class="nav-link px-3 py-2">Sklepik</a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary-dark">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block nav-link nav-link-active py-2">Strona główna</a>
+        <a href="o-nas.html" class="block nav-link py-2">O nas</a>
+        <a href="zajecia.html" class="block nav-link py-2">Zajęcia</a>
+        <a href="cennik.html" class="block nav-link py-2">Cennik</a>
+        <a href="czytelnia.html" class="block nav-link py-2">Czytelnia</a>
+        <a href="gabinet.html" class="block nav-link py-2">Gabinet</a>
+        <a href="kontakt.html" class="block nav-link py-2">Kontakt</a>
+        <a href="aktualnosci.html" class="block nav-link py-2">Aktualności</a>
+        <a href="sklepik.html" class="block nav-link py-2">Sklepik</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="relative bg-gradient-primary overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <img src="images/mandala.gif" alt="" class="w-full h-full object-cover" aria-hidden="true">
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+          Odkryj harmonię <br class="hidden md:block">ciała i umysłu
+        </h1>
+        <p class="text-xl md:text-2xl text-accent-cream mb-8 max-w-3xl mx-auto">
+          Studio jogi Iyengara w Konstancinie-Jeziornie. Profesjonalne zajęcia prowadzone przez certyfikowanych instruktorów.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="zajecia.html" class="btn btn-accent text-lg">
+            Zobacz harmonogram zajęć
+          </a>
+          <a href="kontakt.html" class="btn btn-secondary text-lg">
+            Skontaktuj się z nami
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-gray-50 to-transparent"></div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title">Dlaczego Joga Iyengara?</h2>
+        <p class="section-subtitle max-w-2xl mx-auto">
+          Metoda B.K.S. Iyengara to precyzja, bezpieczeństwo i głębokie zrozumienie ciała
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-accent-cream rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">Precyzja i bezpieczeństwo</h3>
+          <p class="text-body/70">
+            Szczegółowe instrukcje i użycie pomocy zapewniają prawidłowe wykonanie każdej pozycji
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-accent-cream rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">Dla każdego poziomu</h3>
+          <p class="text-body/70">
+            Zajęcia dostosowane do możliwości - od początkujących po zaawansowanych praktykujących
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card p-8 text-center">
+          <div class="w-16 h-16 bg-accent-cream rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-primary mb-3">Korzyści zdrowotne</h3>
+          <p class="text-body/70">
+            Regularna praktyka redukuje stres, wzmacnia mięśnie i poprawia elastyczność
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Types Section -->
+  <section class="py-16 md:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title">Nasze zajęcia</h2>
+        <p class="section-subtitle max-w-2xl mx-auto">
+          Wybierz zajęcia dopasowane do Twoich potrzeb i poziomu zaawansowania
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Iyengar Yoga -->
+        <div class="card p-6 border-t-4 border-primary">
+          <h3 class="text-lg font-bold text-primary mb-2">Joga Iyengara</h3>
+          <p class="text-body/70 text-sm mb-4">
+            Klasyczna metoda z precyzyjnym ustawieniem ciała i użyciem pomocy
+          </p>
+          <span class="inline-block bg-accent-cream text-primary text-xs px-3 py-1 rounded-full">
+            Początkujący / Ogólne
+          </span>
+        </div>
+
+        <!-- Gentle Yoga -->
+        <div class="card p-6 border-t-4 border-accent">
+          <h3 class="text-lg font-bold text-primary mb-2">Joga Łagodna</h3>
+          <p class="text-body/70 text-sm mb-4">
+            Delikatna praktyka idealna dla osób szukających relaksu
+          </p>
+          <span class="inline-block bg-accent-cream text-primary text-xs px-3 py-1 rounded-full">
+            Wszystkie poziomy
+          </span>
+        </div>
+
+        <!-- Spine Yoga -->
+        <div class="card p-6 border-t-4 border-green-600">
+          <h3 class="text-lg font-bold text-primary mb-2">Joga Kręgosłupa</h3>
+          <p class="text-body/70 text-sm mb-4">
+            Specjalistyczne zajęcia dla osób z problemami kręgosłupa
+          </p>
+          <span class="inline-block bg-accent-cream text-primary text-xs px-3 py-1 rounded-full">
+            Początkujący / Ogólne
+          </span>
+        </div>
+
+        <!-- Online -->
+        <div class="card p-6 border-t-4 border-blue-600">
+          <h3 class="text-lg font-bold text-primary mb-2">Zajęcia Online</h3>
+          <p class="text-body/70 text-sm mb-4">
+            Praktykuj w domu pod okiem doświadczonego instruktora
+          </p>
+          <span class="inline-block bg-accent-cream text-primary text-xs px-3 py-1 rounded-full">
+            Ogólne
+          </span>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="zajecia.html" class="btn btn-primary">
+          Zobacz pełny harmonogram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teachers Preview -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="section-title">Nasi instruktorzy</h2>
+        <p class="section-subtitle max-w-2xl mx-auto">
+          Certyfikowani nauczyciele jogi Iyengara z wieloletnim doświadczeniem
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div class="text-center">
+          <div class="w-24 h-24 bg-accent-cream rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl font-bold text-primary">BP</span>
+          </div>
+          <h3 class="font-semibold text-primary">Beata Piłatowicz</h3>
+          <p class="text-sm text-body/70">Iyengar Intro II</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-24 h-24 bg-accent-cream rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl font-bold text-primary">BK</span>
+          </div>
+          <h3 class="font-semibold text-primary">Beata Kowalczyk</h3>
+          <p class="text-sm text-body/70">Fizjoterapeuta</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-24 h-24 bg-accent-cream rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl font-bold text-primary">MC</span>
+          </div>
+          <h3 class="font-semibold text-primary">Marta Chmielewska</h3>
+          <p class="text-sm text-body/70">Iyengar Junior I</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-24 h-24 bg-accent-cream rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl font-bold text-primary">DT</span>
+          </div>
+          <h3 class="font-semibold text-primary">Dominika Trabczyńska</h3>
+          <p class="text-sm text-body/70">Instruktor Iyengar</p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-24 h-24 bg-accent-cream rounded-full mx-auto mb-4 flex items-center justify-center">
+            <span class="text-2xl font-bold text-primary">DW</span>
+          </div>
+          <h3 class="font-semibold text-primary">Dorota Wacek</h3>
+          <p class="text-sm text-body/70">Iyengar Junior Int II</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="o-nas.html" class="btn btn-secondary">
+          Poznaj naszych instruktorów
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 md:py-24 bg-gradient-primary relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <img src="images/mandala.gif" alt="" class="w-full h-full object-cover" aria-hidden="true">
+    </div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Rozpocznij swoją praktykę jogi
+      </h2>
+      <p class="text-xl text-accent-cream mb-8">
+        Zapraszamy na zajęcia w naszym studio w Konstancinie-Jeziornie. Pierwsza wizyta to idealny moment, by odkryć korzyści płynące z jogi Iyengara.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="cennik.html" class="btn btn-accent text-lg">
+          Sprawdź cennik
+        </a>
+        <a href="kontakt.html" class="btn bg-white text-primary hover:bg-accent-cream text-lg">
+          Skontaktuj się
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- About -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Joga Konstancin</h3>
+          <p class="text-accent-cream text-sm">
+            Studio jogi Iyengara w Konstancinie-Jeziornie. Profesjonalne zajęcia dla wszystkich poziomów zaawansowania.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Szybkie linki</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="zajecia.html" class="text-accent-cream hover:text-white">Harmonogram zajęć</a></li>
+            <li><a href="cennik.html" class="text-accent-cream hover:text-white">Cennik</a></li>
+            <li><a href="o-nas.html" class="text-accent-cream hover:text-white">Nasi instruktorzy</a></li>
+            <li><a href="sklepik.html" class="text-accent-cream hover:text-white">Sklepik</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+          <ul class="space-y-2 text-sm text-accent-cream">
+            <li>ul. Warszawska 27</li>
+            <li>05-520 Konstancin-Jeziorna</li>
+            <li class="pt-2">
+              <a href="mailto:info.jogakonstancin@gmail.com" class="hover:text-white">
+                info.jogakonstancin@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Hours -->
+        <div>
+          <h3 class="text-lg font-bold mb-4">Godziny zajęć</h3>
+          <ul class="space-y-1 text-sm text-accent-cream">
+            <li>Poniedziałek - Piątek</li>
+            <li>08:30 - 20:30</li>
+            <li class="pt-2">
+              <a href="zajecia.html" class="text-accent hover:text-white">
+                Zobacz pełny harmonogram →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/20 mt-8 pt-8 text-center text-sm text-accent-cream">
+        <p>&copy; 2024 Joga Konstancin. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

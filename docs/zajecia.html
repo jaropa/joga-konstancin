@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harmonogram zajęć jogi Iyengara w Joga Konstancin. Zajęcia dla początkujących i zaawansowanych.">
+  <title>Zajęcia - Joga Konstancin</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-50">
+  <!-- Navigation -->
+  <nav class="bg-gradient-primary sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-white">Joga Konstancin</span>
+        </a>
+        <div class="hidden lg:flex items-center space-x-1">
+          <a href="index.html" class="nav-link px-3 py-2">Strona główna</a>
+          <a href="o-nas.html" class="nav-link px-3 py-2">O nas</a>
+          <a href="zajecia.html" class="nav-link nav-link-active px-3 py-2">Zajęcia</a>
+          <a href="cennik.html" class="nav-link px-3 py-2">Cennik</a>
+          <a href="czytelnia.html" class="nav-link px-3 py-2">Czytelnia</a>
+          <a href="gabinet.html" class="nav-link px-3 py-2">Gabinet</a>
+          <a href="kontakt.html" class="nav-link px-3 py-2">Kontakt</a>
+          <a href="aktualnosci.html" class="nav-link px-3 py-2">Aktualności</a>
+          <a href="sklepik.html" class="nav-link px-3 py-2">Sklepik</a>
+        </div>
+        <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Menu">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden bg-primary-dark">
+      <div class="px-4 py-3 space-y-2">
+        <a href="index.html" class="block nav-link py-2">Strona główna</a>
+        <a href="o-nas.html" class="block nav-link py-2">O nas</a>
+        <a href="zajecia.html" class="block nav-link nav-link-active py-2">Zajęcia</a>
+        <a href="cennik.html" class="block nav-link py-2">Cennik</a>
+        <a href="czytelnia.html" class="block nav-link py-2">Czytelnia</a>
+        <a href="gabinet.html" class="block nav-link py-2">Gabinet</a>
+        <a href="kontakt.html" class="block nav-link py-2">Kontakt</a>
+        <a href="aktualnosci.html" class="block nav-link py-2">Aktualności</a>
+        <a href="sklepik.html" class="block nav-link py-2">Sklepik</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="bg-gradient-primary py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Harmonogram zajęć</h1>
+      <p class="text-xl text-accent-cream max-w-2xl mx-auto">
+        Wybierz zajęcia dopasowane do Twojego poziomu i harmonogramu
+      </p>
+    </div>
+  </header>
+
+  <!-- Legend -->
+  <section class="py-8 bg-white border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap gap-4 justify-center">
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded bg-primary"></span>
+          <span class="text-sm text-body">Joga Iyengara</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded bg-accent"></span>
+          <span class="text-sm text-body">Joga Łagodna</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded bg-green-600"></span>
+          <span class="text-sm text-body">Joga Kręgosłupa</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-4 h-4 rounded bg-blue-600"></span>
+          <span class="text-sm text-body">Online</span>
+        </div>
+        <div class="flex items-center gap-2 ml-4">
+          <span class="px-2 py-0.5 text-xs rounded bg-accent-cream text-primary">P</span>
+          <span class="text-sm text-body">Początkujący</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 text-xs rounded bg-gray-200 text-body">O</span>
+          <span class="text-sm text-body">Ogólne</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Monday -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+          <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg">Pn</span>
+          Poniedziałek
+        </h2>
+        <div class="card overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Godzina</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Rodzaj zajęć</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Instruktor</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Poziom</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">08:30 - 10:00</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Beata P.</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">17:00 - 18:30</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Marta</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">19:00 - 20:30</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Dominika</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tuesday -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+          <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg">Wt</span>
+          Wtorek
+        </h2>
+        <div class="card overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Godzina</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Rodzaj zajęć</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Instruktor</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Poziom</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">08:30 - 10:00</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Beata P.</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">10:15 - 11:45</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-accent"></span>
+                    Joga Łagodna
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Marta</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">19:00 - 20:15</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-blue-600"></span>
+                    Joga Iyengara (Online)
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Dominika</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">19:00 - 20:30</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Dorota</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Wednesday -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+          <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg">Śr</span>
+          Środa
+        </h2>
+        <div class="card overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Godzina</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Rodzaj zajęć</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Instruktor</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Poziom</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">08:30 - 10:00</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Beata P.</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">17:30 - 18:45</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-green-600"></span>
+                    Joga Kręgosłupa
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Dominika</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący / Ogólne</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">19:00 - 20:30</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Dominika</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Thursday -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+          <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg">Cz</span>
+          Czwartek
+        </h2>
+        <div class="card overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Godzina</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Rodzaj zajęć</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Instruktor</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Poziom</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">08:30 - 10:00</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Beata P.</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">10:15 - 11:45</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-accent"></span>
+                    Joga Łagodna
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Marta</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Friday -->
+      <div class="mb-8">
+        <h2 class="text-2xl font-bold text-primary mb-4 flex items-center gap-3">
+          <span class="w-10 h-10 bg-primary text-white rounded-lg flex items-center justify-center text-lg">Pt</span>
+          Piątek
+        </h2>
+        <div class="card overflow-hidden">
+          <table class="w-full">
+            <thead class="bg-gray-50">
+              <tr>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Godzina</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Rodzaj zajęć</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Instruktor</th>
+                <th class="px-4 py-3 text-left text-sm font-semibold text-body">Poziom</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-100">
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">08:30 - 10:00</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Beata P.</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-accent-cream text-primary">Początkujący</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-gray-50">
+                <td class="px-4 py-4 text-sm font-medium">17:00 - 18:30</td>
+                <td class="px-4 py-4">
+                  <span class="inline-flex items-center gap-2">
+                    <span class="w-3 h-3 rounded bg-primary"></span>
+                    Joga Iyengara
+                  </span>
+                </td>
+                <td class="px-4 py-4 text-sm">Marta</td>
+                <td class="px-4 py-4">
+                  <span class="px-2 py-1 text-xs rounded bg-gray-200 text-body">Ogólne</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Class Descriptions -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="section-title text-center mb-12">Rodzaje zajęć</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="card p-6 border-l-4 border-primary">
+          <h3 class="text-xl font-bold text-primary mb-3">Joga Iyengara</h3>
+          <p class="text-body/80">
+            Klasyczna metoda jogi opracowana przez B.K.S. Iyengara. Charakteryzuje się
+            precyzyjnym ustawieniem ciała w pozycjach (asanach) oraz użyciem pomocy
+            (koce, klocki, pasy) umożliwiających bezpieczną praktykę dla każdego.
+          </p>
+        </div>
+        <div class="card p-6 border-l-4 border-accent">
+          <h3 class="text-xl font-bold text-primary mb-3">Joga Łagodna</h3>
+          <p class="text-body/80">
+            Delikatna forma praktyki idealna dla osób szukających relaksu i odprężenia.
+            Mniejsze tempo pozwala na głębsze odczuwanie pozycji i pełniejszy relaks.
+          </p>
+        </div>
+        <div class="card p-6 border-l-4 border-green-600">
+          <h3 class="text-xl font-bold text-primary mb-3">Joga Kręgosłupa</h3>
+          <p class="text-body/80">
+            Specjalistyczne zajęcia skupione na zdrowiu kręgosłupa. Idealne dla osób
+            z bólami pleców, wadami postawy lub prowadzących siedzący tryb życia.
+          </p>
+        </div>
+        <div class="card p-6 border-l-4 border-blue-600">
+          <h3 class="text-xl font-bold text-primary mb-3">Zajęcia Online</h3>
+          <p class="text-body/80">
+            Możliwość praktyki z domu pod okiem doświadczonego instruktora.
+            Potrzebujesz jedynie komputera lub telefonu z kamerą i połączenia internetowego.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-accent-cream">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">
+        Chcesz dołączyć do zajęć?
+      </h2>
+      <p class="text-body/80 mb-8">
+        Skontaktuj się z nami, aby zapisać się na zajęcia lub zadać pytania.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="kontakt.html" class="btn btn-primary">Skontaktuj się</a>
+        <a href="cennik.html" class="btn btn-secondary">Sprawdź cennik</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <h3 class="text-lg font-bold mb-4">Joga Konstancin</h3>
+          <p class="text-accent-cream text-sm">
+            Studio jogi Iyengara w Konstancinie-Jeziornie. Profesjonalne zajęcia dla wszystkich poziomów zaawansowania.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Szybkie linki</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="zajecia.html" class="text-accent-cream hover:text-white">Harmonogram zajęć</a></li>
+            <li><a href="cennik.html" class="text-accent-cream hover:text-white">Cennik</a></li>
+            <li><a href="o-nas.html" class="text-accent-cream hover:text-white">Nasi instruktorzy</a></li>
+            <li><a href="sklepik.html" class="text-accent-cream hover:text-white">Sklepik</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Kontakt</h3>
+          <ul class="space-y-2 text-sm text-accent-cream">
+            <li>ul. Warszawska 27</li>
+            <li>05-520 Konstancin-Jeziorna</li>
+            <li class="pt-2">
+              <a href="mailto:info.jogakonstancin@gmail.com" class="hover:text-white">
+                info.jogakonstancin@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Godziny zajęć</h3>
+          <ul class="space-y-1 text-sm text-accent-cream">
+            <li>Poniedziałek - Piątek</li>
+            <li>08:30 - 20:30</li>
+            <li class="pt-2">
+              <a href="zajecia.html" class="text-accent hover:text-white">
+                Zobacz pełny harmonogram →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-8 text-center text-sm text-accent-cream">
+        <p>&copy; 2024 Joga Konstancin. Wszystkie prawa zastrzeżone.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
